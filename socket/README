@@ -1,0 +1,29 @@
+CS513 Computer Network Final Project
+Client-Server Chat Program
+Emily Hao
+
+To Run the program, first run the ServerChat jar by directing to that folder, and run
+$java -jar socket.jar.
+
+Then run the MultiClientChat jar by directing to that folder, and run .
+$java -jar client.jar.
+
+Note that I used Intellij, which allows parallel run, so I can run MultiClientChat multiple times for testing.
+
+You should be able to run the client jar file as many times as you want, you do need to open a new terminal window for
+each run. If somehow you cannot run the file mutilple times, simply dumplicated the jar file a couple times,
+you don't need to change any code, just run the different jar files.
+
+Once you run the MultiClientChat, you should see a window asking you to pick a nickname. Once you picked a name, you
+enter the chat, please note the format of the message you can send, else it won't display:
+To Broadcast, type
+@ALL#<Messgae>
+
+To whisper to specific client
+@<Client>#<Message>
+
+@ and # are the signals I used for parsing, so it is important to use this format. After you are done typing your
+massage, simply hit enter to send.
+If you are recieving a message, your window would shake as a notification.
+
+Once you are done with the chat, you can close the chat window.
